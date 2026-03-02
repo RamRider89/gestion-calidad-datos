@@ -1,0 +1,82 @@
+import pandas as pd
+import numpy as np
+from sklearn.cluster import KMeans
+from sklearn.impute import KNNImputer, SimpleImputer
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# --- Creación del DataFrame de ejemplo ---
+# Creamos un conjunto de datos con valores faltantes en la columna 'ingresos'.
+data = {'edad': [25, 30, 35, 40, 45, 50, 55, 60],
+        'ingresos': [50000, 60000, np.nan, 80000, 90000, np.nan, 120000, 130000],
+        'casa_propia': [0, 1, 0, 1, 1, 0, 1, 1]}
+df = pd.DataFrame(data)
+
+print("--- DataFrame Original ---")
+print(df)
+print("\n" + "="*40 + "\n")
+
+# --- 1. Método Estadístico Basado en Proximidad (Ej: K-Means) ---
+# K-Means agrupa los datos encontrando "centroides" y asignando cada punto
+# de datos al centroide más cercano (su "clúster").
+print("--- 1. Ejemplo de Método de Proximidad: K-Means Clustering ---")
+# Para K-Means, necesitamos datos sin valores nulos. Usaremos una copia del DF y la llenaremos con la media por ahora.
+df_kmeans = df.copy()
+df_kmeans['ingresos'].fillna(df_kmeans['ingresos'].mean(), inplace=True)
+
+kmeans = KMeans(n_clusters=2, random_state=0, n_init=10) # n_init=10 para evitar warnings
+df_kmeans['cluster'] = kmeans.fit_predict(df_kmeans[['edad', 'ingresos']])
+
+print("DataFrame con Clústeres Asignados:")
+print(df_kmeans)
+
+# Visualización de los clústeres
+plt.figure(figsize=(8, 6))
+sns.scatterplot(data=df_kmeans, x='edad', y='ingresos', hue='cluster', palette='viridis', s=150)
+plt.title('Clusters con K-Means')
+plt.xlabel('Edad')
+plt.ylabel('Ingresos')
+plt.grid(True)
+plt.savefig('kmeans_clusters.png')
+print("\nSe ha generado el gráfico 'kmeans_clusters.png' para visualizar los clústeres.\n")
+print("\n" + "="*40 + "\n")
+
+
+# --- 2. Método de Resumen (Estadísticas Descriptivas) ---
+# El método .describe() proporciona un resumen estadístico rápido de las
+# columnas numéricas: conteo, media, desviación estándar, mínimo, máximo y los cuartiles.
+print("--- 2. Ejemplo de Método de Resumen: Estadísticas Descriptivas ---")
+resumen_estadistico = df.describe()
+print("Resumen estadístico del DataFrame original:")
+print(resumen_estadistico)
+print("\n" + "="*40 + "\n")
+
+
+# --- 3. Imputación con la Media ---
+# Este método reemplaza los valores faltantes (NaN) en una columna
+# con el valor medio de esa misma columna. Es simple y rápido.
+print("--- 3. Ejemplo de Imputación con la Media ---")
+df_media = df.copy()
+imputador_media = SimpleImputer(strategy='mean')
+df_media['ingresos'] = imputador_media.fit_transform(df_media[['ingresos']])
+
+print("DataFrame después de la imputación con la media:")
+print(df_media)
+print("\n" + "="*40 + "\n")
+
+
+# --- 4. Imputación con Método de Proximidad (K-NN) ---
+# K-NN encuentra los 'k' vecinos más cercanos a la observación con el valor faltante
+# y luego imputa el valor usando el promedio (o la moda) de esos vecinos.
+# Es más sofisticado que la media.
+print("--- 4. Ejemplo de Imputación con K-NN ---")
+df_knn = df.copy()
+imputador_knn = KNNImputer(n_neighbors=2) # Usamos los 2 vecinos más cercanos
+df_knn[['edad', 'ingresos', 'casa_propia']] = imputador_knn.fit_transform(df_knn)
+
+
+print("DataFrame después de la imputación con K-NN (k=2):")
+# Convertimos de nuevo a enteros donde sea apropiado para una mejor lectura
+df_knn['edad'] = df_knn['edad'].astype(int)
+df_knn['casa_propia'] = df_knn['casa_propia'].astype(int)
+print(df_knn)

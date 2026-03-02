@@ -1,0 +1,5 @@
+﻿id_transaccion,id_producto,cantidad,precio_unitario,valor_total
+TX001,PROD-A,1,10.5,10.5
+TX002,PROD-B,5,25,125
+TX003,PROD-C,2,5.75,11.5
+TX004,PROD-A,3,10.5,31.5

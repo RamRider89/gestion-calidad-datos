@@ -1,0 +1,21 @@
+import pandas as pd
+import janitor
+
+# DataFrame con nombres de columna "sucios"
+data = {
+    'First Name': ['John', 'Jane'],
+    'Last Name': ['Doe', 'Doe'],
+    'Age(years)': [28, 34],
+    'E-mail Address': ['john.doe@email.com', 'jane.doe@email.com']
+}
+df = pd.DataFrame(data)
+
+df_validated = df.remove_empty()
+print(f"df_validated: {df_validated}")
+
+# Aplicando clean_names()
+df_cleaned = df.clean_names()
+
+# El resultado son nombres de columna limpios y predecibles
+# ['first_name', 'last_name', 'age_years', 'e_mail_address']
+print(df_cleaned.columns)

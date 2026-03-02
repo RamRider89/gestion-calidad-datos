@@ -1,0 +1,29 @@
+# main.py
+
+import pandas as pd
+# Importamos nuestro módulo con las funciones registradas
+import clean_pipeline 
+
+# 1. Cargar los datos crudos del día
+try:
+    df_raw = pd.read_csv('transporte.csv')
+except FileNotFoundError:
+    print("Error: Archivo 'transporte.csv' no encontrado.")
+    exit()
+
+print("Iniciando pipeline de limpieza de datos...")
+
+# 2. Ejecutar el pipeline de limpieza completo en una sola cadena
+df_final = (
+    df_raw
+    .limpiar_boletos_estructura()
+    .aplicar_boletos_logica_negocio()
+)
+
+# 3. Guardar el resultado limpio
+output_path = 'boletos_dia_limpio_pipeline.csv'
+df_final.to_csv(output_path, index=False)
+
+print(f"\nProceso de pipeline completado. Datos limpios guardados en '{output_path}'")
+print("\nVista previa del DataFrame final:")
+print(df_final)

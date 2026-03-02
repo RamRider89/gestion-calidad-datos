@@ -1,0 +1,70 @@
+import pandas as pd
+import janitor  # pyjanitor se importa así para extender las funcionalidades de pandas
+
+# --- 1. Construir el DataFrame de Prueba ---
+# Creamos un DataFrame que simula datos sucios con varios tipos de duplicados.
+# El objetivo es tener un caso de prueba robusto.
+data = {
+    'ID de Transacción': [101, 102, 103, 104, 105, 106, 107, 108],
+    'nombre_cliente': ['Maria', 'Juan', 'Pedro', 'Maria', 'Juan', 'Ana', 'Maria', 'Juan'],
+    'apellido_cliente': ['Gomez', 'Perez', 'Lopez', 'Gomez', 'Perez', 'Silva', 'Gomez', 'Perez'],
+    'monto': [100, 150, 200, 100, 250, 80, 100, 150],
+    'fecha': ['2025-09-10', '2025-09-10', '2025-09-11', '2025-09-10', '2025-09-12', '2025-09-12', '2025-09-13', '2025-09-10']
+}
+df_sucio = pd.DataFrame(data)
+
+print("--- 1. DataFrame Original (Sucio) ---")
+print("Observa que hay duplicados exactos (fila 0 y 3) y lógicos (múltiples registros para Maria Gomez y Juan Perez).")
+print(df_sucio)
+print("\n" + "="*60 + "\n")
+
+
+# --- 2. Identificando Duplicados con Pyjanitor ---
+# Antes de eliminar, un buen analista siempre identifica el problema.
+# .get_dupes() es una función de pyjanitor para visualizar todas las filas duplicadas.
+
+# Caso A: Duplicados exactos (todas las columnas coinciden)
+print("--- 2a. Identificando Duplicados EXACTOS (todas las columnas) ---")
+duplicados_exactos = df_sucio.get_dupes()
+print(duplicados_exactos)
+print("\n" + "="*60 + "\n")
+
+# Caso B: Duplicados lógicos (basados en un subconjunto de columnas)
+# Aquí, un duplicado es cualquier registro con el mismo nombre y apellido.
+print("--- 2b. Identificando Duplicados LÓGICOS (por nombre y apellido) ---")
+duplicados_logicos = df_sucio.get_dupes(column_names=['nombre_cliente', 'apellido_cliente'])
+print(duplicados_logicos)
+print("\n" + "="*60 + "\n")
+
+
+# --- 3. Limpieza y Eliminación de Duplicados ---
+# Aquí es donde pyjanitor brilla con su "method chaining" (encadenamiento de métodos).
+# Realizamos varias operaciones de limpieza en una sola secuencia lógica.
+
+print("--- 3. Proceso de Limpieza y Eliminación ---")
+df_limpio = (
+    df_sucio
+    .clean_names()  # Estandariza los nombres de las columnas (ej: 'ID de Transacción' -> 'id_de_transaccion')
+    .remove_empty() # Buena práctica: elimina filas o columnas completamente vacías
+    .drop_duplicates(subset=['nombre_cliente', 'apellido_cliente'], keep='first')
+    # ^^^ EL PASO CLAVE ^^^
+    # subset: Define las columnas para identificar un duplicado.
+    # keep='first': Conserva la primera aparición y elimina las siguientes.
+    .reset_index(drop=True) # Reconstruye el índice del DataFrame después de eliminar filas.
+)
+
+print("DataFrame Limpio (un registro único por cliente):")
+print(df_limpio)
+print("\n" + "="*60 + "\n")
+
+
+# --- 4. Verificación Final ---
+# Como buenos analistas, verificamos que nuestro trabajo fue exitoso.
+print("--- 4. Verificación Post-Limpieza ---")
+duplicados_restantes = df_limpio.get_dupes(column_names=['nombre_cliente', 'apellido_cliente'])
+
+if duplicados_restantes.empty:
+    print("¡Verificación exitosa! No quedan duplicados basados en nombre y apellido.")
+else:
+    print("¡Error! Aún quedan duplicados:")
+    print(duplicados_restantes)

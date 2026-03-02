@@ -1,0 +1,95 @@
+import great_expectations as gx
+import pandas as pd
+import os
+import shutil
+
+# --- CONFIGURACIÓN INICIAL ---
+
+# Define el nombre para el contexto de datos y los documentos de datos
+context_root_dir = "gx_temp_project"
+data_docs_site_name = "local_site"
+
+# Limpia el directorio temporal si ya existe para una ejecución limpia
+if os.path.exists(context_root_dir):
+    shutil.rmtree(context_root_dir)
+
+# Inicializa el Data Context. Aquí es donde GE guarda las configuraciones y resultados.
+context = gx.get_context(project_root_dir=context_root_dir)
+
+# --- DATOS DE EJEMPLO ---
+data = {
+    'id_transaccion': ['TX001', 'TX001', 'TX003', 'TX004'],
+    'id_producto': ['PROD-A', 'PROD-B', 'PROD-C', 'PROD-A'],
+    'cantidad': [1, 5, 2, 3],
+    'precio_unitario': [10.50, 25.00, 5.75, 10.50],
+    'valor_total': [10.50, 125.00, 11.50, 31.50]
+}
+df = pd.DataFrame(data)
+
+# --- CONFIGURACIÓN DE GREAT EXPECTATIONS ---
+
+# 1. Añadir el DataFrame como un Datasource
+datasource_name = "my_pandas_datasource"
+datasource = context.sources.add_pandas(name=datasource_name)
+
+asset_name = "ventas_data"
+data_asset = datasource.add_dataframe_asset(name=asset_name)
+batch_request = data_asset.build_batch_request(dataframe=df)
+
+# 2. Crear una Suite de Expectativas
+expectation_suite_name = "ventas_expectations"
+context.add_or_update_expectation_suite(expectation_suite_name=expectation_suite_name)
+
+# 3. Obtener un Validador para definir las pruebas
+validator = context.get_validator(
+    batch_request=batch_request,
+    expectation_suite_name=expectation_suite_name
+)
+
+# --- INICIO DE LAS PRUEBAS AUTOMATIZADAS (EXPECTATIONS) ---
+
+# 1. Validación de Esquema
+validator.expect_table_columns_to_match_ordered_list(
+    column_list=['id_transaccion', 'id_producto', 'cantidad', 'precio_unitario', 'valor_total']
+)
+
+# 2. Validación de Rangos
+validator.expect_column_values_to_be_between(
+    column='cantidad',
+    min_value=1,
+    max_value=99,
+    mostly=1.0  # Esperamos que el 100% de los valores cumplan
+)
+
+# 3. Validación de Unicidad
+validator.expect_column_values_to_be_unique(column='id_transaccion')
+
+# --- FIN DE LAS PRUEBAS ---
+
+# Guardar las expectativas en la Suite
+validator.save_expectation_suite(discard_failed_expectations=False)
+
+# --- EJECUTAR VALIDACIÓN Y GENERAR HTML ---
+
+# 1. Crear un Checkpoint
+# El Checkpoint es el encargado de ejecutar la validación y generar los Data Docs (HTML).
+checkpoint_name = "ventas_checkpoint"
+checkpoint = context.add_or_update_checkpoint(
+    name=checkpoint_name,
+    validations=[
+        {
+            "batch_request": batch_request,
+            "expectation_suite_name": expectation_suite_name,
+        },
+    ],
+)
+
+# 2. Ejecutar el Checkpoint
+checkpoint_result = checkpoint.run()
+
+# 3. Construir y abrir los Data Docs
+# Esta acción genera el sitio HTML y abre el archivo de resultados en tu navegador.
+context.build_data_docs()
+context.open_data_docs()
+
+print("\nAnálisis completado. El informe HTML se ha abierto en tu navegador.")

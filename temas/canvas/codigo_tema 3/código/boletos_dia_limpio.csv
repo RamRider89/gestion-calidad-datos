@@ -1,0 +1,6 @@
+id_ticket,passenger_name,destination_state,price,purchase_date,seat_number,requiere_revision
+T-101,Ana Gómez,Querétaro,450.5,10/09/2025,12,False
+T-102,Carlos Ruiz,Puebla,320.0,11/09/2025,15,False
+T-103,,Hidalgo,280.0,11/09/2025,0,False
+T-104,Sofía Lara,Morelos,,11/09/2025,21,False
+T-105,Luis Méndez,Estado de México,150.75,12/09/2025,5,False

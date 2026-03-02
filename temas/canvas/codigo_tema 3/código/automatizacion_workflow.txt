@@ -1,0 +1,66 @@
+import numpy as np
+import pandas as pd
+import janitor
+
+def limpiar_estructura_boletos(df):
+    """
+    Realiza la limpieza estructural de los datos de boletos de autobús.
+    Normaliza nombres, nulos no estándar, duplicados y fechas.
+    """
+    # Lista de valores que queremos tratar como nulos
+    valores_nulos_no_estandar = ['Sin Dato', 'N/A', 'No Aplica','NaN']
+
+    df_limpio = (
+        df
+        .clean_names()  # 1. Normaliza nombres de columna
+        # 2. Reemplaza todos los nulos no estándar por np.nan en todo el DataFrame
+        .replace(valores_nulos_no_estandar, np.nan)
+        .drop_duplicates(subset='id_ticket', keep='first') # 3. Elimina boletos duplicados
+        #.convert_to_datetime('purchase_date', errors='coerce') # 4. Normaliza fechas
+    )
+    return df_limpio
+
+def aplicar_logica_negocio_boletos(df):
+    """
+    Aplica reglas de negocio específicas al DataFrame de boletos.
+    """
+    print(f"df: {df}")
+    # 1. Limpiar y convertir la columna de precios a numérico
+    df['price'] = df['price'].str.replace('MXN ', '', regex=False)
+    df['price'] = pd.to_numeric(df['price'], errors='coerce')
+
+    # 2. Crear una bandera para boletos que requieren revisión
+    condicion_revision = (df['destination_state'] == 'Querétaro') & (df['price'] < 400.0)
+
+    df['requiere_revision'] = np.where(condicion_revision, True, False)
+
+    # Llenar valores nulos en columnas importantes con un valor por defecto
+    df['seat_number'] = df['seat_number'].fillna(0).astype(int)
+
+    return df
+
+
+# --- main.py ---
+
+# 1. Cargar los datos crudos del día
+try:
+    df_raw = pd.read_csv('transporte.csv')
+except FileNotFoundError:
+    print("Error: Archivo 'boletos_dia.csv' no encontrado.")
+    exit()
+
+# 2. Aplicar la limpieza estructural
+print("Aplicando limpieza estructural (nombres, duplicados, nulos y fechas)...")
+df_estructurado = limpiar_estructura_boletos(df_raw)
+
+# 3. Aplicar la lógica de negocio
+print("Aplicando reglas de negocio (precios y validaciones)...")
+df_final = aplicar_logica_negocio_boletos(df_estructurado)
+
+# 4. Guardar el reporte limpio
+output_path = 'boletos_dia_limpio.csv'
+df_final.to_csv(output_path, index=False)
+
+print(f"\nProceso completado. Datos limpios guardados en '{output_path}'")
+print("\nVista previa del DataFrame final:")
+print(df_final)
