@@ -22,26 +22,3 @@ pip install ipykernel
 
 
 # ----------------
-
-# great_expectations
-pip install great_expectations
-conda install -c conda-forge great-expectations
-
-
-# err
-# 1. Activar el entorno
-conda activate data_env-p10
-
-# 2. Desinstalar la versión conflictiva de NumPy
-pip uninstall numpy -y
-
-# 3. Instalar la versión "Golden" compatible con Great Expectations y Python 3.10
-pip install "numpy<2.0.0,>=1.22.4"
-
-# 4. Reinstalar Great Expectations para asegurar que los entry points se reparen
-pip install --upgrade great-expectations
-
-
-
---
-pip install "ydata-profiling" "numpy<2.0.0" "pyjanitor" "great-expectations"
