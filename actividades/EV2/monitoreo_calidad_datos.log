@@ -1,0 +1,263 @@
+2026-03-10 22:57:12,216 - CRITICAL - Fallo inesperado en el pipeline de monitoreo: 'unit_price'
+2026-03-10 22:58:08,406 - INFO - Control superado. Consistencia actual: 100.00%. Umbral: 98.0%.
+2026-03-10 22:58:30,457 - INFO - Control superado. Consistencia actual: 100.00%. Umbral: 99.0%.
+2026-03-10 22:58:36,726 - INFO - Control superado. Consistencia actual: 100.00%. Umbral: 100.0%.
+2026-03-10 22:58:44,568 - ERROR - ALERTA DE CALIDAD: La consistencia financiera (100.00%) es menor al umbral exigido (110.0%).
+2026-03-10 22:58:59,053 - INFO - Control superado. Consistencia actual: 100.00%. Umbral: 98.0%.
+2026-03-10 23:08:58,026 - CRITICAL - Fallo inesperado en el pipeline de monitoreo: name 'display_mensaje' is not defined
+2026-03-10 23:09:11,247 - INFO - Pandas backend loaded 2.3.3
+2026-03-10 23:09:11,253 - INFO - Numpy backend loaded 2.2.6
+2026-03-10 23:09:11,253 - INFO - Pyspark backend NOT loaded
+2026-03-10 23:09:11,253 - INFO - Python backend loaded
+2026-03-10 23:09:12,072 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'parseString' deprecated - use 'parse_string'
+2026-03-10 23:09:12,073 - WARNING - In /home/idavid/miniconda3/envs/janitor-p10/lib/python3.10/site-packages/matplotlib/mpl-data/stylelib/classic.mplstyle: 'resetCache' deprecated - use 'reset_cache'
+2026-03-10 23:09:12,732 - INFO - Skipping registering function get_context because it does not have a class
+2026-03-10 23:09:14,638 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,638 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,638 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,638 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,641 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,641 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,641 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,641 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,644 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,644 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,644 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,644 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,647 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,647 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,647 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,647 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,650 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,650 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,650 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,650 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,716 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,717 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,717 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,717 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,783 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,783 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,784 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,785 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,785 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,785 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,785 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,785 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,785 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,786 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,786 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,789 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,789 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,789 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,789 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,792 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,792 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,792 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,792 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,792 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,793 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,794 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,794 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,794 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,794 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,796 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,796 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,796 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,796 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,797 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,798 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,798 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,801 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,802 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,802 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,802 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,802 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,803 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:14,803 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,803 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,803 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,803 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,814 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,815 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,815 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,815 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,822 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,822 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,822 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,822 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,824 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,824 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,824 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,824 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,827 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,827 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,827 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,827 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,831 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,831 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,831 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:14,831 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,035 - INFO - Multiple declarations of metric table.column_types for engine PandasExecutionEngine.
+2026-03-10 23:09:15,035 - INFO - Multiple declarations of metric table.column_types for engine SparkDFExecutionEngine.
+2026-03-10 23:09:15,039 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,039 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,039 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,039 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,044 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,044 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,044 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,045 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,124 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,125 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,126 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,126 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,126 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,126 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,126 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,126 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,129 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,129 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,129 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,129 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,133 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,133 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,133 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,133 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,133 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,134 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,138 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,138 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,138 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,138 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,138 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,138 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,139 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,143 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,143 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,143 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,143 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,143 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,143 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._bind_asset_factory_method_if_not_present.<locals>._add_asset_factory because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,144 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,145 - INFO - Multiple declarations of metric column.standard_deviation for engine PandasExecutionEngine.
+2026-03-10 23:09:15,145 - INFO - Multiple declarations of metric column.standard_deviation.aggregate_fn for engine SparkDFExecutionEngine.
+2026-03-10 23:09:15,145 - INFO - Multiple declarations of metric column.standard_deviation for engine SparkDFExecutionEngine.
+2026-03-10 23:09:15,152 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,152 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,152 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,152 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,156 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,156 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,156 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,156 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,162 - INFO - Skipping registering function DataSourceManager._register_add_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,162 - INFO - Skipping registering function DataSourceManager._register_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,162 - INFO - Skipping registering function DataSourceManager._register_add_or_update_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:15,162 - INFO - Skipping registering function DataSourceManager._register_delete_datasource.<locals>.crud_method_info because it is a closure
+2026-03-10 23:09:24,598 - INFO - Métrica: Completitud, Valor: 100.00%
+2026-03-10 23:09:24,599 - INFO - Control superado. Metrica: Completitud con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:09:24,599 - INFO - Métrica: Unicidad, Valor: 100.00%
+2026-03-10 23:09:24,599 - INFO - Control superado. Metrica: Unicidad con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:09:24,599 - INFO - Métrica: Consistencia, Valor: 100.00%
+2026-03-10 23:09:24,599 - INFO - Control superado. Metrica: Consistencia con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:09:24,600 - INFO - Métrica: Precisión, Valor: 100.00%
+2026-03-10 23:09:24,600 - INFO - Control superado. Metrica: Precisión con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:09:24,600 - INFO - Métrica: Puntualidad, Valor: 100.00%
+2026-03-10 23:09:24,600 - INFO - Control superado. Metrica: Puntualidad con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:09:49,764 - INFO - Métrica: Completitud, Valor: 100.00%
+2026-03-10 23:09:49,764 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Completitud con valor: (100.00%) es menor al umbral exigido (110.0%).
+2026-03-10 23:09:49,764 - INFO - Métrica: Unicidad, Valor: 100.00%
+2026-03-10 23:09:49,765 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Unicidad con valor: (100.00%) es menor al umbral exigido (110.0%).
+2026-03-10 23:09:49,765 - INFO - Métrica: Consistencia, Valor: 100.00%
+2026-03-10 23:09:49,765 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Consistencia con valor: (100.00%) es menor al umbral exigido (110.0%).
+2026-03-10 23:09:49,765 - INFO - Métrica: Precisión, Valor: 100.00%
+2026-03-10 23:09:49,765 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Precisión con valor: (100.00%) es menor al umbral exigido (110.0%).
+2026-03-10 23:09:49,765 - INFO - Métrica: Puntualidad, Valor: 100.00%
+2026-03-10 23:09:49,765 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Puntualidad con valor: (100.00%) es menor al umbral exigido (110.0%).
+2026-03-10 23:13:26,810 - INFO - Métrica: Completitud, Valor: 100.00%
+2026-03-10 23:13:26,811 - INFO - Control superado. Metrica: Completitud con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:13:26,811 - INFO - Métrica: Unicidad, Valor: 100.00%
+2026-03-10 23:13:26,811 - INFO - Control superado. Metrica: Unicidad con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:13:26,811 - INFO - Métrica: Consistencia, Valor: 100.00%
+2026-03-10 23:13:26,812 - INFO - Control superado. Metrica: Consistencia con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:13:26,812 - INFO - Métrica: Precisión, Valor: 100.00%
+2026-03-10 23:13:26,812 - INFO - Control superado. Metrica: Precisión con valor: 100.00%. Umbral: 98.0%.
+2026-03-10 23:13:26,812 - INFO - Métrica: Puntualidad, Valor: 100.00%
+2026-03-10 23:13:26,813 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Puntualidad con valor: (100.00%) es menor al umbral exigido (110.0%).
