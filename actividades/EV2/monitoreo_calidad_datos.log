@@ -261,3 +261,14 @@
 2026-03-10 23:13:26,812 - INFO - Control superado. Metrica: Precisión con valor: 100.00%. Umbral: 98.0%.
 2026-03-10 23:13:26,812 - INFO - Métrica: Puntualidad, Valor: 100.00%
 2026-03-10 23:13:26,813 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Puntualidad con valor: (100.00%) es menor al umbral exigido (110.0%).
+2026-03-11 13:42:47,062 - CRITICAL - Fallo inesperado en el pipeline de monitoreo: name 'display_mensaje' is not defined
+2026-03-11 14:11:40,812 - INFO - Métrica: Completitud, Valor: 100.00%
+2026-03-11 14:11:40,813 - INFO - Control superado. Metrica: Completitud con valor: 100.00%. Umbral: 98.0%.
+2026-03-11 14:11:40,814 - INFO - Métrica: Unicidad, Valor: 100.00%
+2026-03-11 14:11:40,814 - INFO - Control superado. Metrica: Unicidad con valor: 100.00%. Umbral: 98.0%.
+2026-03-11 14:11:40,814 - INFO - Métrica: Consistencia, Valor: 100.00%
+2026-03-11 14:11:40,815 - INFO - Control superado. Metrica: Consistencia con valor: 100.00%. Umbral: 98.0%.
+2026-03-11 14:11:40,815 - INFO - Métrica: Precisión, Valor: 100.00%
+2026-03-11 14:11:40,815 - INFO - Control superado. Metrica: Precisión con valor: 100.00%. Umbral: 98.0%.
+2026-03-11 14:11:40,815 - INFO - Métrica: Puntualidad, Valor: 100.00%
+2026-03-11 14:11:40,816 - ERROR - ALERTA DE CALIDAD: La métrica de calidad: Puntualidad con valor: (100.00%) es menor al umbral exigido (110.0%).
